@@ -57,7 +57,7 @@
 		plural: function(n) {return n != 1;},
 		load: function() {
 			$.gt.setLang($('html').attr('lang'));
-			$('link[rel=gettext][lang=' + this.lang + ']').each(function(){
+			$('link[rel="gettext"][lang="' + this.lang + '"]').each(function(){
 				var lang = this.lang;
 				var href = this.href;
 				if (!href.match(/https?:\/\//)) {
